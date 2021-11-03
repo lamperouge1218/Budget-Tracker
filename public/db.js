@@ -77,4 +77,15 @@ request.onsuccess = function (e) {
   }
 };
 
+const saveRecord = (record) => {
+  console.log("Save Record invoked");
 
+  // Create a transaction on the BudgetStore db with readwrite access
+  const transaction = db.transaction(["BudgetStore"], "readwrite");
+
+  // Access the BudgetStore object store
+  const store = transaction.objectStore("BudgetStore");
+
+  // Add record to store with add method
+  store.add(record);
+};
