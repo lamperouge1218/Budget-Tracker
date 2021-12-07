@@ -44,6 +44,8 @@ Again, if the repo is cloned to your machine and all the necessary devices are i
 
 Once on the Heroku app or with the server spun up, this PWA can be downloaded/installed on a desktop/mobile device and can queue transactions while offline which will be sent to the database upon reconnection to the internet. The graph will update and show recent transactions.
 
+Regardless of where it is used, the user simply titles the transaction and gives it a dollar amount. This amount can then be added or subtracted from the total pool of funds. This update will then be reflected in the graph on screen. 
+
 ## License
 
 This project is protected under the [MIT](https://choosealicense.com/licenses/mit/) license. (2021) (Phil Bohn)
